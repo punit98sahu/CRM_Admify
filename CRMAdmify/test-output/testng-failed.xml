@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AdmifyWindows.LoginPage">
+      <class name="AdmifyWindows.LeadsPage">
         <methods>
           <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-          <include name="Dashboard"/>
+          <include name="AddLeadForm"/>
+          <include name="Login"/>
         </methods>
-      </class> <!-- AdmifyWindows.LoginPage -->
+      </class> <!-- AdmifyWindows.LeadsPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

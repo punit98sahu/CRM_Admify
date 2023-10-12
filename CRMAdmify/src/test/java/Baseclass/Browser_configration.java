@@ -36,8 +36,8 @@ public class Browser_configration {
 		driver.get("http://139.59.34.177:4200/");
 	}
 	}
-	  @AfterSuite
-	  public void afterMethod() {
-	  }
+//	  @AfterSuite
+//	  public void afterMethod() {
+//	  }
 
 }

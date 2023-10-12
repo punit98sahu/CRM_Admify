@@ -1,49 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-11T10:16:29 IST" name="Default suite" finished-at="2023-10-11T10:17:10 IST" duration-ms="41559">
+  <suite started-at="2023-10-12T17:46:26 IST" name="Default suite" finished-at="2023-10-12T17:46:33 IST" duration-ms="6641">
     <groups>
     </groups>
-    <test started-at="2023-10-11T10:16:29 IST" name="Default test" finished-at="2023-10-11T10:17:10 IST" duration-ms="41559">
-      <class name="AdmifyWindows.LoginPage">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:AdmifyWindows.LoginPage@35d019a3]" started-at="2023-10-11T10:16:25 IST" name="beforeMethod" finished-at="2023-10-11T10:16:29 IST" duration-ms="4186" status="PASS">
+    <test started-at="2023-10-12T17:46:26 IST" name="Default test" finished-at="2023-10-12T17:46:33 IST" duration-ms="6641">
+      <class name="AdmifyWindows.LeadsPage">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:AdmifyWindows.LeadsPage@49e53c76]" started-at="2023-10-12T17:46:24 IST" name="beforeMethod" finished-at="2023-10-12T17:46:26 IST" duration-ms="2620" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="Login()[pri:1, instance:AdmifyWindows.LoginPage@35d019a3]" started-at="2023-10-11T10:16:29 IST" name="Login" finished-at="2023-10-11T10:16:30 IST" duration-ms="807" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:AdmifyWindows.LeadsPage@49e53c76]" started-at="2023-10-12T17:46:26 IST" name="Login" finished-at="2023-10-12T17:46:27 IST" duration-ms="333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Dashboard()[pri:2, instance:AdmifyWindows.LoginPage@35d019a3]" started-at="2023-10-11T10:16:30 IST" name="Dashboard" finished-at="2023-10-11T10:16:40 IST" duration-ms="10776" status="PASS">
+        <test-method signature="AddLeads()[pri:0, instance:AdmifyWindows.LeadsPage@49e53c76]" started-at="2023-10-12T17:46:27 IST" name="AddLeads" finished-at="2023-10-12T17:46:31 IST" duration-ms="4600" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Dashboard -->
-        <test-method signature="DashboardLeadsCount()[pri:3, instance:AdmifyWindows.LoginPage@35d019a3]" started-at="2023-10-11T10:16:40 IST" name="DashboardLeadsCount" finished-at="2023-10-11T10:16:45 IST" duration-ms="4636" status="PASS">
+        </test-method> <!-- AddLeads -->
+        <test-method signature="AddLeadForm()[pri:2, instance:AdmifyWindows.LeadsPage@49e53c76]" started-at="2023-10-12T17:46:31 IST" name="AddLeadForm" finished-at="2023-10-12T17:46:33 IST" duration-ms="1676" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DashboardLeadsCount -->
-        <test-method signature="counsellor()[pri:4, instance:AdmifyWindows.LoginPage@35d019a3]" started-at="2023-10-11T10:16:45 IST" name="counsellor" finished-at="2023-10-11T10:16:50 IST" duration-ms="4574" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- counsellor -->
-        <test-method signature="Task()[pri:5, instance:AdmifyWindows.LoginPage@35d019a3]" started-at="2023-10-11T10:16:50 IST" name="Task" finished-at="2023-10-11T10:16:58 IST" duration-ms="8567" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Task -->
-        <test-method signature="Leads()[pri:6, instance:AdmifyWindows.LoginPage@35d019a3]" started-at="2023-10-11T10:16:58 IST" name="Leads" finished-at="2023-10-11T10:17:04 IST" duration-ms="5550" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Leads -->
-        <test-method signature="FunctionalGrid()[pri:7, instance:AdmifyWindows.LoginPage@35d019a3]" started-at="2023-10-11T10:17:04 IST" name="FunctionalGrid" finished-at="2023-10-11T10:17:10 IST" duration-ms="6577" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FunctionalGrid -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:AdmifyWindows.LoginPage@35d019a3]" started-at="2023-10-11T10:17:10 IST" name="afterMethod" finished-at="2023-10-11T10:17:10 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- AdmifyWindows.LoginPage -->
+        </test-method> <!-- AddLeadForm -->
+      </class> <!-- AdmifyWindows.LeadsPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
