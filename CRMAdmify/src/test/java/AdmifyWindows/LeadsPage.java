@@ -42,7 +42,7 @@ public class LeadsPage extends LoginPage {
 	}
 	
 	@Test (priority = 2)
-	public void AddLeadForm() {
+	public void AddLeadForm() throws InterruptedException {
 		//click on name input box
 		WebElement NameInput = driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/div[1]/div/div/input"));
 		NameInput.click();
@@ -263,20 +263,72 @@ public class LeadsPage extends LoginPage {
 		ParentContact.sendKeys("4455678998");
 		
 		//click on groups dropdown
-		driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/div[28]/div/div/div")).click();
+		driver.findElement(By.xpath("//*[@id=\"demo-multiple-checkbox\"]")).click();
 		//click on groups dropdown
-		List <WebElement> group = driver.findElements(By.xpath("/html/body/div[4]/div[3]/ul"));
-		for(WebElement element : group) {
-			System.out.println(element.getText());
-			if(element.getText().equals(String.valueOf(4)));
-			element.click();
-			System.out.println("groups selected");
-		}
-		
-		
-		
-		
-		
+		List <WebElement> group_list = driver.findElements(By.xpath("/html/body/div[4]/div[3]/ul"));
+		group_list.size();
+		//*[@id="demo-multiple-checkbox"]
+        String groupName ="free open group just to test the add leads to this group";
+        int temp=0 ;
+        
+		for(int i= 1; i<5; i++) {
+			
+			//System.out.println("call"+ i);
+			String group= "/html/body/div[4]/div[3]/ul/li["+i+"]/div/span";
+			WebElement ele1= driver.findElement(By.xpath(group));
+			//ele1.getText();
+			String str = ele1.getText();
+	        System.out.println("got group:"+str);	
+			if(str.contains(groupName)) {
+				System.out.println("true");
+				temp=i;
+			}	
+		}		
+		  
+		  String group= "/html/body/div[4]/div[3]/ul/li["+temp+"]/span[1]/input";
+		  WebElement ele1= driver.findElement(By.xpath(group));
+		  ele1.click();
+
+		  Actions act=new Actions(driver); act.moveByOffset(50, 50);
+		  act.click().perform();
+		  
+		  //click on cross icon
+		  driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/h2/button")).click();
+		  
+		  //click on Add button
+//		  driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]")).click();
+		  
+		  //click on add lead FAB icon
+		  Thread.sleep(2000); 
+		  Actions act1 = new Actions(driver);
+		  WebElement AddLead1 = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div/div/main/div/div/div[4]/div[1]/div[1]/div/div/button"));
+		  act1.moveToElement(AddLead1).click().perform();
+		  act1.click().build().perform();
+		 
+		  //click on add bulk leads button 
+		  driver.findElement(By.xpath("html/body/div/div/div/div/div/div/main/div/div/div[4]/div/div/div/div/div/button[2]")).click(); 
+		  
+		  //click on upload button 
+		  driver.findElement(By.cssSelector("body > div.MuiDialog-root.MuiModal-root.css-74waha > div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > "
+		  		+ "div > div.MuiDialogContent-root.MuiDialogContent-dividers.css-1r09u4m > div > div.MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-xs-12.css-ipi2ni >"
+		  		+ " div.MuiFormControl-root.MuiFormControl-fullWidth.MuiTextField-root.css-feqhe6 > div > div > svg")).click();
+		  Thread.sleep(10000);
+		  
+		  //click on download csv button
+		  driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[1]/p")).click();
+		  
+		  //click on Add button of add bulk leads
+//		  driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/button")).click();
+		  
+		  //click on Close button of add bulk leads
+		  driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/h2/button")).click();
+		  
+		  //click on search input box
+		  WebElement searchInputBox = driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div[1]/div/div[1]/div/input"));
+		  searchInputBox.click();
+		  searchInputBox.sendKeys("rajiv");
+		  
+		  
+		  
 	}
 }
-	
