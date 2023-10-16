@@ -6,7 +6,7 @@
       <class name="AdmifyWindows.LeadsPage">
         <methods>
           <include name="beforeMethod"/>
-          <include name="AddLeadForm"/>
+          <include name="Filter"/>
           <include name="Login"/>
         </methods>
       </class> <!-- AdmifyWindows.LeadsPage -->

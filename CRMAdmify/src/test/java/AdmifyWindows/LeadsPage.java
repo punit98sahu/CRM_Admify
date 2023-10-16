@@ -267,10 +267,9 @@ public class LeadsPage extends LoginPage {
 		//click on groups dropdown
 		List <WebElement> group_list = driver.findElements(By.xpath("/html/body/div[4]/div[3]/ul"));
 		group_list.size();
-		//*[@id="demo-multiple-checkbox"]
-        String groupName ="free open group just to test the add leads to this group";
-        int temp=0 ;
         
+		String groupName ="free open group just to test the add leads to this group";
+        int temp=0 ;       
 		for(int i= 1; i<5; i++) {
 			
 			//System.out.println("call"+ i);
@@ -282,6 +281,7 @@ public class LeadsPage extends LoginPage {
 			if(str.contains(groupName)) {
 				System.out.println("true");
 				temp=i;
+				break;
 			}	
 		}		
 		  
@@ -289,7 +289,8 @@ public class LeadsPage extends LoginPage {
 		  WebElement ele1= driver.findElement(By.xpath(group));
 		  ele1.click();
 
-		  Actions act=new Actions(driver); act.moveByOffset(50, 50);
+		  Actions act=new Actions(driver); 
+		  act.moveByOffset(50, 50);
 		  act.click().perform();
 		  
 		  //click on cross icon
@@ -315,7 +316,7 @@ public class LeadsPage extends LoginPage {
 		  Thread.sleep(10000);
 		  
 		  //click on download csv button
-		  driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[1]/p")).click();
+//		  driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[1]/p")).click();
 		  
 		  //click on Add button of add bulk leads
 //		  driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/button")).click();
@@ -327,8 +328,125 @@ public class LeadsPage extends LoginPage {
 		  WebElement searchInputBox = driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div[1]/div/div[1]/div/input"));
 		  searchInputBox.click();
 		  searchInputBox.sendKeys("rajiv");
+		  Thread.sleep(2000);
+		  searchInputBox.clear();
+		  Thread.sleep(2000);
 		  
+		  Actions click= new Actions(driver);
+		  click.moveByOffset(50, 50);
+		  click.click().perform();
 		  
 		  
 	}
+	@Test (priority =3)
+	public void Filter() throws InterruptedException {
+		//applying filter
+		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div[1]/div/div[3]/button")).click();
+		  	
+		// click on courses filter
+		driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div[2]/div[1]/div[1]/div[1]")).click();
+		
+		//click on respected course
+		String courseName= "bca";
+		int temp=0;
+		for(int i=1; i<10; i++) {
+			
+			String courseList = "/html/body/div[3]/div[3]/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div/div/div["+i+"]";
+			WebElement ele = driver.findElement(By.xpath(courseList));
+			String name= ele.getText();
+			System.out.println("course names:" + name);
+			if(name.contains(courseName)) {
+				System.out.println("true");
+				temp=i;
+				break;
+			}
+		}	
+		//click on the respected variable include or exclude button
+		WebElement Course =driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div/div[2]/div["+temp+"]/div/label[1]/span/input"));
+		Course.click();
+		
+		//click on apply button
+		driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/button[2]")).click();
+		
+		//click on clear all button
+//		driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/button[1]")).click();
+		
+		//click on filter to copy and paste the same filter
+		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div[1]/div/div[3]/button")).click();
+		Thread.sleep(2000);
+		System.out.println("select filter button successfully");
+		
+//		//click on copy filter button
+//		WebElement copyFilter =driver.findElement(By.xpath("body > div.MuiDrawer-root.MuiDrawer-modal.MuiModal-root.css-19wlzsv > "
+//				+ "div.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation16.MuiDrawer-paper.MuiDrawer-paperAnchorRight.css-1ab2xsx > div > "
+//				+ "div.flex-1.overflow-auto > div.flex-1.py-9.m-auto.gap-2.justify-center.flex.flex-col.pr-2.pl-2.bg-\\[\\#3366FF1A\\] > div.flex.justify-between.items-center >"
+//				+ " div > svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.cursor-pointer.text-\\[\\#3366ff\\].hover\\:text-black.css-vubbuv > path"));
+//		
+//		Actions a=new Actions(driver);
+//		a.moveToElement(copyFilter).click().perform();
+//		System.out.println("select copy button successfully");
+//		Thread.sleep(2000);
+//		//click on clear all button
+//		driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/button[1]")).click();
+//		//click on paste filter button
+//		driver.findElement(By.xpath("body > div.MuiDrawer-root.MuiDrawer-modal.MuiModal-root.css-19wlzsv >"
+//				+ " div.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation16.MuiDrawer-paper.MuiDrawer-paperAnchorRight.css-1ab2xsx > div > div.flex-1.overflow-auto >"
+//				+ " div.flex-1.py-9.m-auto.gap-2.justify-center.flex.flex-col.pr-2.pl-2.bg-\\[\\#3366FF1A\\] > div.flex.justify-between.items-center > div > svg:nth-child(2)")).click();
+//		//click on Apply button
+//		driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/button[2]")).click();
+//		
+		
+		List <WebElement> grouplength=driver.findElements(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div[2]/div"));
+		System.out.println(grouplength.size());
+		
+		for(int i=1; i<grouplength.size(); i++) {
+			//clicking on all the filters
+		WebElement FilterLoop = driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div[2]/div["+i+"]/div[1]"));
+		FilterLoop.click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div[2]/div["+i+"]/div[2]/div/div/div/div/div[2]/div[1]/div/label[1]/span/input")).click();
+		
+	}	
+		//click on apply button
+		driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/button[2]")).click();
+		
+		//click on Add to group button After adding filter
+		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div[1]/div/div[2]/div[1]/button")).click();
+		//click on Add to existing group dropdown
+		driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/div[2]/div/div/div")).click();
+		//selecting the existing group
+		List <WebElement> ExistingGroup = driver.findElements(By.xpath("/html/body/div[4]/div[3]/ul/li"));
+		System.out.println(ExistingGroup.size());
+		
+		String groupName ="free open group just to test the add leads to this group";
+        int temp1=0 ;       
+		for(int i = 1; i<=ExistingGroup.size(); i++) {
+			System.out.print(i);
+			String group= "/html/body/div[4]/div[3]/ul/li["+i+"]";
+			WebElement ele1= driver.findElement(By.xpath(group));
+			
+			String str = ele1.getText();
+	        System.out.println("got group:"+str);	
+			if(str.contains(groupName)) {
+				System.out.println("true");
+				temp1=i;
+				break;
+			}	
+		}		
+		//click on respected group
+		driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li["+temp1+"]")).click();
+		
+		//click on add button to add the leads into the group
+		driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/button")).click();
+		
+		
+		
+	}
 }
+	
+	
+	
+	
+	
+	
+	
