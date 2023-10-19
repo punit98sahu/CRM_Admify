@@ -1,7 +1,5 @@
 package AdmifyWindows;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -235,9 +233,6 @@ public class LoginPage extends Browser_configration{
 	  driver.findElement(By.xpath("//*[@id=\"simple-tab-0\"]")).click();
 	  //click on analytics day wise chart
 	  driver.findElement(By.xpath("//*[@id=\"simple-tab-1\"]")).click();
-	  
-	  //verifying date filter
-	  driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[3]/div[1]/div[2]/div[1]/div/input")).click();
 	  
   }  
 	  
