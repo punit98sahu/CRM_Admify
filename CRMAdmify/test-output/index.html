@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\hp\AppData\Local\Temp\testng-eclipse-1864947029\testng-customsuite.xml</span>
+                    <span>C:\Users\hp\AppData\Local\Temp\testng-eclipse-569066068\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="AdmifyWindows.LeadsPage" class="method navigator-link" hash-for-method="AddGroup">AddGroup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="AdmifyWindows.LeadsPage" class="method navigator-link" hash-for-method="AddLeadForm">AddLeadForm</a> <!-- method navigator-link -->
@@ -137,6 +142,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="AddGroup">
+                  </a> <!-- AddGroup -->
+                  <span class="method-name">AddGroup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="AddLeadForm">
                   </a> <!-- AddLeadForm -->
                   <span class="method-name">AddLeadForm</span>
@@ -161,7 +173,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hp\AppData\Local\Temp\testng-eclipse-1864947029\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\hp\AppData\Local\Temp\testng-eclipse-569066068\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -210,24 +222,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'AddLeadForm')
 data.setCell(0, 2, 'AdmifyWindows.LeadsPage')
-data.setCell(0, 3, 40613);
+data.setCell(0, 3, 32963);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Filter')
 data.setCell(1, 2, 'AdmifyWindows.LeadsPage')
-data.setCell(1, 3, 9227);
+data.setCell(1, 3, 29610);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'AddLeads')
+data.setCell(2, 1, 'AddGroup')
 data.setCell(2, 2, 'AdmifyWindows.LeadsPage')
-data.setCell(2, 3, 5538);
+data.setCell(2, 3, 5615);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'AddLeads')
+data.setCell(3, 2, 'AdmifyWindows.LeadsPage')
+data.setCell(3, 3, 5058);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 55 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -260,19 +276,23 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">Login</span>
-                <span class="method-start">5532 ms</span>
+                <span class="method-start">4231 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">AddLeads</span>
-                <span class="method-start">6304 ms</span>
+                <span class="method-start">5260 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AddLeadForm</span>
-                <span class="method-start">11854 ms</span>
+                <span class="method-start">10325 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Filter</span>
-                <span class="method-start">52469 ms</span>
+                <span class="method-start">43292 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddGroup</span>
+                <span class="method-start">72903 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
