@@ -14,6 +14,7 @@ public class LeadsPage extends LoginPage {
 	@Test(priority = 1)
 	public void AddLeads() throws InterruptedException {
 		// driver.manage().window().maximize();
+		System.out.println("Start leads page");
 		// Clicking on Leads tab in menu
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/div/div/ul/li[2]")).click();

@@ -8,7 +8,7 @@ public class Dashboard extends LoginPage {
 	 @Test (priority = 1)
 	  public void DashBoard() throws InterruptedException {
 	      Thread.sleep(2000);
-	      
+	      System.out.println("Start Dashboard page");
 	      //Active Referrer on Dashboard      
 	      WebElement ele=driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div/div/main/div/div/div[2]/div/div[1]/div/div[1]/div[1]"));
 	      String referrer = ele.getText();

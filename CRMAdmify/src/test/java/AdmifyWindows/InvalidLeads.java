@@ -12,7 +12,7 @@ public class InvalidLeads extends LoginPage {
 	@Test
 	public void InValidLeads() throws InterruptedException {
 		Thread.sleep(2000);
-
+		System.out.println("Start Invalid leads page");
 		// click on side arrow to close the side menu nav bar
 		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div/div/div/div/div/button")).click();
 

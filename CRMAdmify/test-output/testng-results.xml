@@ -2,12 +2,12 @@
 <testng-results ignored="6" total="18" passed="10" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-25T18:15:50 IST" name="Suite" finished-at="2023-10-25T18:18:57 IST" duration-ms="186918">
+  <suite started-at="2023-10-25T20:44:57 IST" name="Suite" finished-at="2023-10-25T20:47:40 IST" duration-ms="162558">
     <groups>
     </groups>
-    <test started-at="2023-10-25T18:15:50 IST" name="CompleteProject" finished-at="2023-10-25T18:18:57 IST" duration-ms="186918">
+    <test started-at="2023-10-25T20:44:57 IST" name="CompleteProject" finished-at="2023-10-25T20:47:40 IST" duration-ms="162558">
       <class name="AdmifyWindows.InvalidLeads">
-        <test-method signature="InValidLeads()[pri:0, instance:AdmifyWindows.InvalidLeads@a1153bc]" started-at="2023-10-25T18:18:16 IST" name="InValidLeads" finished-at="2023-10-25T18:18:56 IST" duration-ms="40603" status="FAIL">
+        <test-method signature="InValidLeads()[pri:0, instance:AdmifyWindows.InvalidLeads@a1153bc]" started-at="2023-10-25T20:47:04 IST" name="InValidLeads" finished-at="2023-10-25T20:47:39 IST" duration-ms="34980" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element <div class="flex  flex-1 h-full flex-col" style="max-width: 100%;">...</div> is not clickable at point (638, 357). Other element would receive the click: <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-919eu4" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div>
@@ -15,10 +15,10 @@
 Build info: version: '4.12.1', revision: '8e34639b11'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [497f73e582c9adcc9a28c6b0e680538d, clickElement {id=8EDACDB137ABE83A42BA76C215FC1B8C_element_1927}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65135}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65135/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (497f73e582c9adcc9a28c6b0e680538d)] -> xpath: /html/body/div[1]/div/div/div/div/div/main/div/div]
-Session ID: 497f73e582c9adcc9a28c6b0e680538d]]>
+Command: [a6bb2807ce61caa875b2f75d300f3147, clickElement {id=B14B2C34BD5D54AF69EC327060C7522D_element_1966}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50642}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50642/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a6bb2807ce61caa875b2f75d300f3147)] -> xpath: /html/body/div[1]/div/div/div/div/div/main/div/div]
+Session ID: a6bb2807ce61caa875b2f75d300f3147]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="flex  flex-1 h-full flex-col" style="max-width: 100%;">...</div> is not clickable at point (638, 357). Other element would receive the click: <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-919eu4" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div>
@@ -26,10 +26,10 @@ Session ID: 497f73e582c9adcc9a28c6b0e680538d]]>
 Build info: version: '4.12.1', revision: '8e34639b11'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [497f73e582c9adcc9a28c6b0e680538d, clickElement {id=8EDACDB137ABE83A42BA76C215FC1B8C_element_1927}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65135}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65135/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (497f73e582c9adcc9a28c6b0e680538d)] -> xpath: /html/body/div[1]/div/div/div/div/div/main/div/div]
-Session ID: 497f73e582c9adcc9a28c6b0e680538d
+Command: [a6bb2807ce61caa875b2f75d300f3147, clickElement {id=B14B2C34BD5D54AF69EC327060C7522D_element_1966}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50642}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50642/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a6bb2807ce61caa875b2f75d300f3147)] -> xpath: /html/body/div[1]/div/div/div/div/div/main/div/div]
+Session ID: a6bb2807ce61caa875b2f75d300f3147
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -79,7 +79,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InValidLeads -->
-        <test-method signature="EditInvalidLeads()[pri:2, instance:AdmifyWindows.InvalidLeads@a1153bc]" started-at="2023-10-25T18:18:56 IST" name="EditInvalidLeads" finished-at="2023-10-25T18:18:57 IST" duration-ms="1129" status="FAIL">
+        <test-method signature="EditInvalidLeads()[pri:2, instance:AdmifyWindows.InvalidLeads@a1153bc]" started-at="2023-10-25T20:47:39 IST" name="EditInvalidLeads" finished-at="2023-10-25T20:47:40 IST" duration-ms="1119" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element <div data-id="6513ff8d2a60c3eb73f88d85" data-rowindex="0" role="row" class="MuiDataGrid-row" aria-rowindex="2" aria-selected="false" style="max-height: 36px; min-height: 36px;">...</div> is not clickable at point (630, 286). Other element would receive the click: <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-919eu4" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div>
@@ -87,10 +87,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Build info: version: '4.12.1', revision: '8e34639b11'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [497f73e582c9adcc9a28c6b0e680538d, clickElement {id=8EDACDB137ABE83A42BA76C215FC1B8C_element_1937}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65135}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65135/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (497f73e582c9adcc9a28c6b0e680538d)] -> xpath: /html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[2]/div[2]/div[2]/div/div/div[1]]
-Session ID: 497f73e582c9adcc9a28c6b0e680538d]]>
+Command: [a6bb2807ce61caa875b2f75d300f3147, clickElement {id=B14B2C34BD5D54AF69EC327060C7522D_element_1976}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50642}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50642/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a6bb2807ce61caa875b2f75d300f3147)] -> xpath: /html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[2]/div[2]/div[2]/div/div/div[1]]
+Session ID: a6bb2807ce61caa875b2f75d300f3147]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div data-id="6513ff8d2a60c3eb73f88d85" data-rowindex="0" role="row" class="MuiDataGrid-row" aria-rowindex="2" aria-selected="false" style="max-height: 36px; min-height: 36px;">...</div> is not clickable at point (630, 286). Other element would receive the click: <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-919eu4" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div>
@@ -98,10 +98,10 @@ Session ID: 497f73e582c9adcc9a28c6b0e680538d]]>
 Build info: version: '4.12.1', revision: '8e34639b11'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [497f73e582c9adcc9a28c6b0e680538d, clickElement {id=8EDACDB137ABE83A42BA76C215FC1B8C_element_1937}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65135}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65135/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (497f73e582c9adcc9a28c6b0e680538d)] -> xpath: /html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[2]/div[2]/div[2]/div/div/div[1]]
-Session ID: 497f73e582c9adcc9a28c6b0e680538d
+Command: [a6bb2807ce61caa875b2f75d300f3147, clickElement {id=B14B2C34BD5D54AF69EC327060C7522D_element_1976}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50642}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50642/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a6bb2807ce61caa875b2f75d300f3147)] -> xpath: /html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[2]/div[2]/div[2]/div/div/div[1]]
+Session ID: a6bb2807ce61caa875b2f75d300f3147
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -152,56 +152,56 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- EditInvalidLeads -->
       </class> <!-- AdmifyWindows.InvalidLeads -->
-      <class name="AdmifyWindows.LeadsPage">
-        <test-method signature="AddLeads()[pri:1, instance:AdmifyWindows.LeadsPage@7b2bbc3]" started-at="2023-10-25T18:16:32 IST" name="AddLeads" finished-at="2023-10-25T18:16:37 IST" duration-ms="4801" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddLeads -->
-        <test-method signature="AddLeadForm()[pri:2, instance:AdmifyWindows.LeadsPage@7b2bbc3]" started-at="2023-10-25T18:16:37 IST" name="AddLeadForm" finished-at="2023-10-25T18:17:10 IST" duration-ms="32712" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddLeadForm -->
-        <test-method signature="Filter()[pri:3, instance:AdmifyWindows.LeadsPage@7b2bbc3]" started-at="2023-10-25T18:17:10 IST" name="Filter" finished-at="2023-10-25T18:17:41 IST" duration-ms="31465" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Filter -->
-        <test-method signature="AddGroup()[pri:4, instance:AdmifyWindows.LeadsPage@7b2bbc3]" started-at="2023-10-25T18:17:41 IST" name="AddGroup" finished-at="2023-10-25T18:18:16 IST" duration-ms="34331" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddGroup -->
-      </class> <!-- AdmifyWindows.LeadsPage -->
       <class name="AdmifyWindows.Dashboard">
-        <test-method signature="DashBoard()[pri:1, instance:AdmifyWindows.Dashboard@4c583ecf]" started-at="2023-10-25T18:15:51 IST" name="DashBoard" finished-at="2023-10-25T18:16:02 IST" duration-ms="10867" status="PASS">
+        <test-method signature="DashBoard()[pri:1, instance:AdmifyWindows.Dashboard@4c583ecf]" started-at="2023-10-25T20:44:57 IST" name="DashBoard" finished-at="2023-10-25T20:45:08 IST" duration-ms="10353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DashBoard -->
-        <test-method signature="DashboardLeadsCount()[pri:2, instance:AdmifyWindows.Dashboard@4c583ecf]" started-at="2023-10-25T18:16:02 IST" name="DashboardLeadsCount" finished-at="2023-10-25T18:16:07 IST" duration-ms="4626" status="PASS">
+        <test-method signature="DashboardLeadsCount()[pri:2, instance:AdmifyWindows.Dashboard@4c583ecf]" started-at="2023-10-25T20:45:08 IST" name="DashboardLeadsCount" finished-at="2023-10-25T20:45:12 IST" duration-ms="4377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DashboardLeadsCount -->
-        <test-method signature="counsellor()[pri:3, instance:AdmifyWindows.Dashboard@4c583ecf]" started-at="2023-10-25T18:16:07 IST" name="counsellor" finished-at="2023-10-25T18:16:11 IST" duration-ms="4630" status="PASS">
+        <test-method signature="counsellor()[pri:3, instance:AdmifyWindows.Dashboard@4c583ecf]" started-at="2023-10-25T20:45:12 IST" name="counsellor" finished-at="2023-10-25T20:45:17 IST" duration-ms="4390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- counsellor -->
-        <test-method signature="Task()[pri:4, instance:AdmifyWindows.Dashboard@4c583ecf]" started-at="2023-10-25T18:16:11 IST" name="Task" finished-at="2023-10-25T18:16:20 IST" duration-ms="8615" status="PASS">
+        <test-method signature="Task()[pri:4, instance:AdmifyWindows.Dashboard@4c583ecf]" started-at="2023-10-25T20:45:17 IST" name="Task" finished-at="2023-10-25T20:45:25 IST" duration-ms="8348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Task -->
-        <test-method signature="Leads()[pri:5, instance:AdmifyWindows.Dashboard@4c583ecf]" started-at="2023-10-25T18:16:20 IST" name="Leads" finished-at="2023-10-25T18:16:26 IST" duration-ms="5655" status="PASS">
+        <test-method signature="Leads()[pri:5, instance:AdmifyWindows.Dashboard@4c583ecf]" started-at="2023-10-25T20:45:25 IST" name="Leads" finished-at="2023-10-25T20:45:30 IST" duration-ms="5346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Leads -->
-        <test-method signature="FunctionalGrid()[pri:6, instance:AdmifyWindows.Dashboard@4c583ecf]" started-at="2023-10-25T18:16:26 IST" name="FunctionalGrid" finished-at="2023-10-25T18:16:32 IST" duration-ms="6621" status="PASS">
+        <test-method signature="FunctionalGrid()[pri:6, instance:AdmifyWindows.Dashboard@4c583ecf]" started-at="2023-10-25T20:45:30 IST" name="FunctionalGrid" finished-at="2023-10-25T20:45:36 IST" duration-ms="5347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FunctionalGrid -->
       </class> <!-- AdmifyWindows.Dashboard -->
+      <class name="AdmifyWindows.LeadsPage">
+        <test-method signature="AddLeads()[pri:1, instance:AdmifyWindows.LeadsPage@7b2bbc3]" started-at="2023-10-25T20:45:36 IST" name="AddLeads" finished-at="2023-10-25T20:45:40 IST" duration-ms="4508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddLeads -->
+        <test-method signature="AddLeadForm()[pri:2, instance:AdmifyWindows.LeadsPage@7b2bbc3]" started-at="2023-10-25T20:45:40 IST" name="AddLeadForm" finished-at="2023-10-25T20:46:07 IST" duration-ms="26495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddLeadForm -->
+        <test-method signature="Filter()[pri:3, instance:AdmifyWindows.LeadsPage@7b2bbc3]" started-at="2023-10-25T20:46:07 IST" name="Filter" finished-at="2023-10-25T20:46:34 IST" duration-ms="26922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Filter -->
+        <test-method signature="AddGroup()[pri:4, instance:AdmifyWindows.LeadsPage@7b2bbc3]" started-at="2023-10-25T20:46:34 IST" name="AddGroup" finished-at="2023-10-25T20:47:04 IST" duration-ms="29993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddGroup -->
+      </class> <!-- AdmifyWindows.LeadsPage -->
       <class name="AdmifyWindows.LoginPage">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:AdmifyWindows.LoginPage@689604d9]" started-at="2023-10-25T18:15:46 IST" name="beforeMethod" finished-at="2023-10-25T18:15:50 IST" duration-ms="4325" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:AdmifyWindows.LoginPage@689604d9]" started-at="2023-10-25T20:44:54 IST" name="beforeMethod" finished-at="2023-10-25T20:44:57 IST" duration-ms="3402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:AdmifyWindows.LoginPage@689604d9]" started-at="2023-10-25T18:15:50 IST" name="Login" finished-at="2023-10-25T18:15:51 IST" duration-ms="776" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:AdmifyWindows.LoginPage@689604d9]" started-at="2023-10-25T20:44:57 IST" name="Login" finished-at="2023-10-25T20:44:57 IST" duration-ms="324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
