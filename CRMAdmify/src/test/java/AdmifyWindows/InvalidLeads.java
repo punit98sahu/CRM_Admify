@@ -112,7 +112,7 @@ public class InvalidLeads extends LoginPage {
 		System.out.println("click on clear button successfully");
 
 		//click anywhere on the screen
-		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div")).click();
+		driver.findElement(By.xpath("/html/body/div[3]/div[1]")).click();
 
 		// Test the pagination bar click on pagination bar select page dropdown
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[2]/div[3]/div[2]/div/div[2]/div")).click();
@@ -131,7 +131,7 @@ public class InvalidLeads extends LoginPage {
 
 		}
 		//click anywhere on the screen
-		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div")).click();
+		driver.findElement(By.xpath("/html/body/div[3]/div[1]")).click();
 		
 		Thread.sleep(1000);
 		// click on pagination next button
@@ -189,18 +189,18 @@ public class InvalidLeads extends LoginPage {
 		//click on Name drodown in the column tab
 		driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/div/div/div[3]/div/select")).click();
 		
-		//Select the value from the name dropdown
+		//Select the value from the name dropdown column tab
 		List <WebElement> NameList = driver.findElements(By.xpath("/html/body/div[3]/div/div[2]/div/div/div[3]/div/select/option"));
 		System.out.println(NameList.size());
 		driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/div/div/div[3]/div/select/option[9]")).click();
 		
-		//select the value from the contains dropdown
+		//select the value from the contains dropdown column tab
 		List <WebElement> ContainLists = driver.findElements(By.xpath("/html/body/div[3]/div/div[2]/div/div/div[4]/div/select/option"));
 		System.out.println(ContainLists.size());
 		driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/div/div/div[4]/div/select/option[2]")).click();
 		
-		//enter the text in the search input field	
-		WebElement Text = driver.findElement(By.xpath("//*[@id=\":r8r:\"]"));
+		//enter the text in the search input field in column tab
+		WebElement Text = driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/div/div/div[5]/div/div/input"));
 		Text.click();
 		Text.sendKeys("hindi");
 		
@@ -215,10 +215,10 @@ public class InvalidLeads extends LoginPage {
 		
 		//Click on the Export drodown in the column tab
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[2]/div[1]/button[4]")).click();
-		
+		Thread.sleep(2000);
 		//select the value from export dropdown
 		driver.findElement(By.xpath("/html/body/div[3]/div/ul/li[2]")).click();
-		
+		System.out.println("-----successfull-------");
 	}	
 	
 }

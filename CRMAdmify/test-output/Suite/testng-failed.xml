@@ -6,7 +6,6 @@
       <class name="AdmifyWindows.InvalidLeads">
         <methods>
           <include name="beforeMethod"/>
-          <include name="InValidLeads"/>
           <include name="EditInvalidLeads"/>
           <include name="Login"/>
         </methods>
