@@ -8,7 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 public class Demos extends LoginPage{
-  @Test
+  @Test (priority =1)
   public void CreateDemo() throws InterruptedException {
 	  Thread.sleep(1000);
 	  //click on Demo in the menu tab
@@ -85,6 +85,10 @@ public class Demos extends LoginPage{
 	  driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/div/div/ul/li[7]/div/div[2]")).click();
 	  Thread.sleep(1000);
 	  
+  }
+	  @Test (priority =2)
+	  public void TableColumns() throws InterruptedException {
+	  
 	//click on column button tab
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div/div[1]/button[1]")).click();
 		
@@ -104,18 +108,18 @@ public class Demos extends LoginPage{
 		//click on the filtered column to enable or disable
 		driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/div[2]/div/div/label/span[1]/span[1]/input")).click();
 		
-		//click on Filters in the column tab
+		//click on Filters in the Table column tab
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div/div[1]/button[2]")).click();
 		
-		//click on Name drodown in the column tab
+		//click on Columns drodown in the Table column tab
 		driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/div/div/div[3]/div/select")).click();
 		
-		//Select the value from the name dropdown column tab
+		//Select the value from the Column dropdown in the table column tab
 		List <WebElement> NameList = driver.findElements(By.xpath("/html/body/div[3]/div/div[2]/div/div/div[3]/div/select/option"));
 		System.out.println(NameList.size());
-		driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/div/div/div[3]/div/select/option[9]")).click();  //error
+		driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/div/div/div[3]/div/select/option[3]")).click(); 
 		
-		//select the value from the contains dropdown column tab
+		//select the value from the operators dropdown in the table column tab
 		List <WebElement> ContainLists = driver.findElements(By.xpath("/html/body/div[3]/div/div[2]/div/div/div[4]/div/select/option"));
 		System.out.println(ContainLists.size());
 		driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/div/div/div[4]/div/select/option[2]")).click();
@@ -123,18 +127,25 @@ public class Demos extends LoginPage{
 		//enter the text in the search input field in column tab
 		WebElement Text = driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/div/div/div[5]/div/div/input"));
 		Text.click();
-		Text.sendKeys("hindi");
-		
+		Text.sendKeys("http://192.168.1.38:1100/super-admin/");
+		Thread.sleep(4000);
 		//click on cross icon after filter data
 		WebElement DoubleClick = driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/div/div/div[1]/button"));
 		Actions a = new Actions(driver);
 		a.doubleClick(DoubleClick).build().perform();
 		System.out.println("Double click successfully");
 
+		//Click on the density drodown in column tab
+		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div/div[1]/button[2]")).click();
 		
-
+		//Click on the Export drodown in the column tab
+		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div/div[1]/button[4]")).click();
+		Thread.sleep(2000);
+		//select the value from export dropdown
+		driver.findElement(By.xpath("/html/body/div[3]/div/ul/li[2]")).click();
+		
+		
   	}
-	  
 	  
 }
 

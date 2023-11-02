@@ -11,7 +11,7 @@
         <class name="AdmifyWindows.Referrers"/>
         <class name="AdmifyWindows.Documents"/>
         <class name="AdmifyWindows.Groups"/>
-      
+      	<class name="AdmifyWindows.Demos"/>
       
     </classes>
   </test> <!-- CompleteProject -->

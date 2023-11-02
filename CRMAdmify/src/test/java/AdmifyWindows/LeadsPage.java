@@ -315,8 +315,7 @@ public class LeadsPage extends LoginPage {
 		// click on upload button
 		driver.findElement(By.cssSelector("body > div.MuiDialog-root.MuiModal-root.css-74waha > div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > "
 						+ "div > div.MuiDialogContent-root.MuiDialogContent-dividers.css-1r09u4m > div > div.MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-xs-12.css-ipi2ni >"
-						+ " div.MuiFormControl-root.MuiFormControl-fullWidth.MuiTextField-root.css-feqhe6 > div > div > svg"))
-				.click();
+						+ " div.MuiFormControl-root.MuiFormControl-fullWidth.MuiTextField-root.css-feqhe6 > div > div > svg")).click();
 		Thread.sleep(10000);
 
 		// click on download csv button
