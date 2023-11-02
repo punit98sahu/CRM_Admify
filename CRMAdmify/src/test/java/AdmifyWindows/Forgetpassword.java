@@ -20,7 +20,7 @@ public class Forgetpassword extends Browser_configration {
 	  email.sendKeys("admin@gmail.com");
 	  //click on Next button
 	  driver.findElement(By.xpath("/html/body/div[2]/div[3]/div/div[2]/button")).click();
-	  //click input box to enter otp
+	  //click input box to enter OTP
 	  Thread.sleep(2000);
 	  WebElement otp = driver.findElement(By.cssSelector("body > div.MuiDialog-root.MuiModal-root.css-1lxzhke > div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > div > div.MuiDialogContent-root.flex.flex-col.gap-4.css-1ty026z > div > div > div.MuiFormControl-root.MuiTextField-root.MuiOtpInput-TextField.MuiOtpInput-TextField-1.w-10.bg-none.css-1phe0ka"));
 	  Actions action =new Actions(driver);

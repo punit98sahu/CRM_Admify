@@ -219,7 +219,46 @@ public class Dashboard extends LoginPage {
 		  driver.findElement(By.xpath("//*[@id=\"simple-tab-1\"]")).click();
 		  
 		  //verifying date filter
-		  driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[3]/div[1]/div[2]/div[1]/div/input")).click();
-	
-	  }  
+		  driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[3]/div[1]/div[2]/div[1]/div/input")).click(); 
+
+
+	      System.out.println("Start Dashboard page");
+	      //Active Referrer on Dashboard      
+	      WebElement ele=driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div/div/main/div/div/div[2]/div/div[1]/div/div[1]/div[1]"));
+	      String referrer = ele.getText();
+	      System.out.println("Referrer: "+referrer);
+	      
+	      //Total Referrer count on dashboard      
+	      WebElement TotalReferrer = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div/div/main/div/div/div[2]/div/div[1]/div/div[2]/div[1]/p[2]"));
+	      String DashboardReferrer = TotalReferrer.getText();
+	      System.out.println("Dashboard total referrer count:" + DashboardReferrer);
+	      
+	      //checking total referrer on Referrer window.      
+	      driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div/div/div/div/ul/li[3]/div/div[2]")).click();
+	      Thread.sleep(4000);
+	      WebElement referrerCount = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div/div/main/div/div/div[1]/nav/ol/li/div"));
+	      String ReferrerOnReferrer = referrerCount.getText();
+	      System.out.println(ReferrerOnReferrer);
+	      
+//	      Thread.sleep(2000);
+//	      //total active referrer
+//	      List <WebElement> referrer1 = driver.findElements(By.className("MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked "
+//	      		+ "PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked Mui-checked css-1nr2wod"));
+//	      System.out.println("this is total active referrer count:" + referrer1);
+	      
+	      //To trim the Referrer count to verify count.
+	      Thread.sleep(4000);
+	      String str= ReferrerOnReferrer.substring(11, 13);
+	      
+	      System.out.println("Referrer page total Referrer count:" + str);
+	      
+	      if(DashboardReferrer.equals(str)) {
+	          System.out.println("Total Referrer count is verified");
+	      }
+	      else {
+	          System.out.println("Total Referrer count is invalid");
+	      }
 }
+
+}
+
