@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 public class TasksPage extends LoginPage {
@@ -14,7 +15,7 @@ public class TasksPage extends LoginPage {
 	  Thread.sleep(2000);
 	  //click on Task tab in menu
 	  driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/div/div/ul/li[8]/div")).click();
-	  Thread.sleep(2000);
+	  Thread.sleep(5000);
 	  //Verify the Total Tasks
 	  System.out.println(driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/nav/ol/li/div")).getText());
 	  
@@ -115,7 +116,8 @@ public class TasksPage extends LoginPage {
 		driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/h2/button")).click();
 		
   }
-		@Test (priority =2)
+  
+  @Test (priority =2)
 		public void TasksFunctionality () throws InterruptedException {
 			
 		//click on search filter 
@@ -133,10 +135,10 @@ public class TasksPage extends LoginPage {
 		
 		//click on Analysis tab
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[2]/div/div/div/button[2]")).click();
-		
+		Thread.sleep(2000);
 		//verify the analysis tab
 		System.out.println(driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[3]")).getText());
-		
+		Thread.sleep(2000);
 		//click on view more button
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[3]/div/div/p")).click();
 		Thread.sleep(5000);
@@ -148,12 +150,101 @@ public class TasksPage extends LoginPage {
 		
 		List <WebElement> pagination = driver.findElements(By.xpath("/html/body/div[3]/div[3]/ul/li"));
 		pagination.size();
-		
+		Thread.sleep(2000);
 		for(int i=1; i<= pagination.size(); i++) {
 			WebElement page = driver.findElement(By.xpath("/html/body/div[3]/div[3]/ul/li["+i+"]"));
 			page.click();
+			Thread.sleep(1000);
 			driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[3]/div/div[3]/div[2]/div/div[2]/div")).click();
+			Thread.sleep(1000);
+		}	
+		Thread.sleep(2000);
+		
+		//click next page icon
+		WebElement pageIcon = driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[3]/div/div[3]/div[2]/div/div[3]/button[2]")); 
+		
+		Actions act=new Actions(driver);
+		act.doubleClick(pageIcon).perform();//To move the focus from pagination
+		System.out.println("-------------successfull------------");
+  }
+  		
+  
+	@Test (priority = 3)
+		public void TaskDetial() throws InterruptedException {
+		Thread.sleep(5000);
+		//click on created tasks
+		List <WebElement> TaskLists = driver.findElements(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[3]/div/div[2]/div[2]/div/div/div"));
+		TaskLists.size();
+		//click on the top task
+		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[3]/div/div[2]/div[2]/div/div/div[1]")).click();
+		Thread.sleep(5000);
+		//get the task count with task name;
+		System.out.println(driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/nav/ol/li[3]/div")).getText());
+		Thread.sleep(5000);
+		//click on search input box
+		WebElement SearchInput = driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div/div[1]/div/input"));
+		SearchInput.click();
+		SearchInput.sendKeys("eulogik");
+		Thread.sleep(2000);
+		//get the total leads count in the task
+		System.out.println(driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[2]/div[2]/div[2]/div/div")).getText());
+		Thread.sleep(2000);
+		
+		//click on show all button
+//		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[1]/span/input")).click();
+		
+		//click on counselor dropdown
+		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div/div[2]/div/div")).click();
+		Thread.sleep(2000);
+		
+		//get the list of the counselor
+		List <WebElement> FilterCounselor = driver.findElements(By.xpath("/html/body/div[3]/div[3]/ul/li"));
+		System.out.println(FilterCounselor.size());
+		String CounselorName = "punit sahu";
+		for(int i=1; i<=FilterCounselor.size(); i++)
+		{
+			String element = "/html/body/div[3]/div[3]/ul/li["+i+"]";
+			WebElement counselors = driver.findElement(By.xpath(element));
+			String TextMatch = counselors.getText();
+			Thread.sleep(2000);
+			if(TextMatch.contains(CounselorName)) {
+				driver.findElement(By.xpath(TextMatch)).click();
+			}
 		}
+		System.out.println("------successfully-------");
+		for(WebElement Counselor :FilterCounselor) {
+			System.out.println(Counselor.getText());
+		}
+		
+		//click on Teamleader dropdown
+		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div/div[3]/div/div")).click();
+		
+		//get the list of the teamlerders
+		System.out.println(driver.findElement(By.xpath("/html/body/div[3]/div[3]/ul/li")).getText());
+		
+//		List <WebElement> Teamleader = driver.findElements(By.xpath("/html/body/div[3]/div[3]/ul/li"));
+//		Teamleader.size();
+//		for(WebElement ele : Teamleader) {
+//			System.out.println(ele.getText());
+//		}
+		
+		//click on filter button
+		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div/div[4]/button")).click();
+		
+		//apply referrer filter
+		driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div[2]/div[2]/div[1]")).click();
+		
+		//run loop to apply the appropriate filter
+		driver.findElement(By.xpath(""));
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
   }

@@ -6,6 +6,7 @@
       <class name="AdmifyWindows.TasksPage">
         <methods>
           <include name="beforeMethod"/>
+          <include name="TaskDetial"/>
           <include name="TasksFunctionality"/>
           <include name="Login"/>
         </methods>

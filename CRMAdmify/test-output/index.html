@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="AdmifyWindows.TasksPage" class="method navigator-link" hash-for-method="AddTask">AddTask</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="AdmifyWindows.TasksPage" class="method navigator-link" hash-for-method="TaskDetial">TaskDetial</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,6 +143,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="TaskDetial">
+                  </a> <!-- TaskDetial -->
+                  <span class="method-name">TaskDetial</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="TasksFunctionality">
                   </a> <!-- TasksFunctionality -->
                   <span class="method-name">TasksFunctionality</span>
@@ -148,7 +160,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse-2147300160/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse-39730095/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -197,20 +209,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'AddTask')
+data.setCell(0, 1, 'TasksFunctionality')
 data.setCell(0, 2, 'AdmifyWindows.TasksPage')
-data.setCell(0, 3, 33381);
+data.setCell(0, 3, 35718);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TasksFunctionality')
+data.setCell(1, 1, 'AddTask')
 data.setCell(1, 2, 'AdmifyWindows.TasksPage')
-data.setCell(1, 3, 15259);
+data.setCell(1, 3, 34025);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TaskDetial')
+data.setCell(2, 2, 'AdmifyWindows.TasksPage')
+data.setCell(2, 3, 18785);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 48 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -243,15 +259,19 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">Login</span>
-                <span class="method-start">5297 ms</span>
+                <span class="method-start">3118 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">AddTask</span>
-                <span class="method-start">5903 ms</span>
+                <span class="method-start">3586 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TasksFunctionality</span>
-                <span class="method-start">39289 ms</span>
+                <span class="method-start">37617 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TaskDetial</span>
+                <span class="method-start">73340 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
