@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AdmifyWindows.TasksPage">
+      <class name="AdmifyWindows.StagesPage">
         <methods>
           <include name="beforeMethod"/>
-          <include name="TaskDetial"/>
-          <include name="TasksFunctionality"/>
+          <include name="AddStages"/>
           <include name="Login"/>
         </methods>
-      </class> <!-- AdmifyWindows.TasksPage -->
+      </class> <!-- AdmifyWindows.StagesPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

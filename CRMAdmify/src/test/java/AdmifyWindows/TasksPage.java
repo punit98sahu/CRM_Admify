@@ -1,5 +1,7 @@
 package AdmifyWindows;
 
+import static org.testng.Assert.ARRAY_MISMATCH_TEMPLATE;
+
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -188,39 +190,44 @@ public class TasksPage extends LoginPage {
 		Thread.sleep(2000);
 		//get the total leads count in the task
 		System.out.println(driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[2]/div[2]/div[2]/div/div")).getText());
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		
 		//click on show all button
 //		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[1]/span/input")).click();
 		
 		//click on counselor dropdown
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div/div[2]/div/div")).click();
-		Thread.sleep(2000);
+		Thread.sleep(20000);
 		
 		//get the list of the counselor
 		List <WebElement> FilterCounselor = driver.findElements(By.xpath("/html/body/div[3]/div[3]/ul/li"));
 		System.out.println(FilterCounselor.size());
-		String CounselorName = "punit sahu";
-		for(int i=1; i<=FilterCounselor.size(); i++)
-		{
-			String element = "/html/body/div[3]/div[3]/ul/li["+i+"]";
-			WebElement counselors = driver.findElement(By.xpath(element));
-			String TextMatch = counselors.getText();
-			Thread.sleep(2000);
-			if(TextMatch.contains(CounselorName)) {
-				driver.findElement(By.xpath(TextMatch)).click();
-			}
-		}
-		System.out.println("------successfully-------");
-		for(WebElement Counselor :FilterCounselor) {
-			System.out.println(Counselor.getText());
-		}
-		
-		//click on Teamleader dropdown
-		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div/div[3]/div/div")).click();
-		
-		//get the list of the teamlerders
-		System.out.println(driver.findElement(By.xpath("/html/body/div[3]/div[3]/ul/li")).getText());
+//		String CounselorName = "punit sahu";
+//		for(int i=1; i<=FilterCounselor.size(); i++)
+//		{
+//			System.out.println("get into the loop succesfully");
+//			String element = "/html/body/div[3]/div[3]/ul/li["+i+"]";
+//			WebElement counselors = driver.findElement(By.xpath(element));
+//			String TextMatch = counselors.getText();
+//			Thread.sleep(2000);
+//			if(TextMatch.contains(CounselorName)) {
+//				driver.findElement(By.xpath(TextMatch)).click();
+//			}
+//			System.out.println("get into the loop succesfully");
+//		}
+//		System.out.println("------successfully-------");
+//		for(WebElement Counselor :FilterCounselor) {
+//			System.out.println(Counselor.getText());
+//		}
+		System.out.println("come out from the loop successfully");
+//		//again click on counselor dropdown
+//		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div/div[2]/div/div")).click();
+//		
+//		//click on Teamleader dropdown
+//		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div/div[3]/div/div")).click();
+//		
+//		//get the list of the teamlerders
+//		System.out.println(driver.findElement(By.xpath("/html/body/div[3]/div[3]/ul/li")).getText());
 		
 //		List <WebElement> Teamleader = driver.findElements(By.xpath("/html/body/div[3]/div[3]/ul/li"));
 //		Teamleader.size();
@@ -235,7 +242,22 @@ public class TasksPage extends LoginPage {
 		driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div[2]/div[2]/div[1]")).click();
 		
 		//run loop to apply the appropriate filter
-		driver.findElement(By.xpath(""));
+		List <WebElement> Referrers = driver.findElements(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div[2]/div"));
+		System.out.println(Referrers.size());
+		String ReferrerName= "punit sahu";
+		for(int i = 1; i<= Referrers.size(); i ++) {
+			String ele = "/html/body/div[3]/div[3]/div/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div[2]/div["+i+"]";
+//			WebElement size = driver.findElement(By.xpath(ele));
+			if(ele.contains(ReferrerName)) {
+				driver.findElement(By.xpath(ele)).click();
+			}
+			System.out.println("---click on appropriate filter----");
+					
+		}
+			
+	
+			
+		driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div[2]/div[1]/div/label[1]/span/input"));
 		
 		
 		
