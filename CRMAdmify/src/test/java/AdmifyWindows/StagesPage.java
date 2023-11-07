@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 public class StagesPage extends LoginPage {
@@ -100,13 +101,14 @@ public class StagesPage extends LoginPage {
 	  //Search the stages by stage Name only 
 	  WebElement stageSearch = driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div/div[1]/div/input"));
 	  stageSearch.click();
-	  stageSearch.sendKeys("wrong");
+	  String entered ="Wrong";
+	  stageSearch.sendKeys(entered);
 	  
 	  //click on the filtered category to get the stage
 	  WebElement stages =driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[1]/div[1]"));
 	  stages.click();
 	  Thread.sleep(4000);
-	  stages.clear();
+	  
 	  //get the total count of the added stages under stage category
 	  List <WebElement> stagesCount = driver.findElements(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[4]/div[2]/div/div/div/div/div/div"));
 	  System.out.println(stagesCount.size());
@@ -114,9 +116,31 @@ public class StagesPage extends LoginPage {
 	  for(WebElement ele:stagesCount) {
 		  System.out.println(ele.getText());
 	  }
+	  //click on filtered stage to update the stage name
+	  WebElement UpdateStage = driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div/div[2]/div/div/div/div/div/div/div[2]/div"));
+	  UpdateStage.click();
+	  Thread.sleep(2000);
+	  //click on title input box to edit the stage name
+	  WebElement stageValue = driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/input"));
+	  Actions act= new Actions(driver);
+	  act.moveToElement(stageValue).doubleClick().click().sendKeys(Keys.BACK_SPACE).perform();
+	  stageValue.sendKeys("call Not attend");
+	  Thread.sleep(2000);
 	  
-
+	  //click on update button
+	  driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/button")).click();
+	  //click on close icon
+//	  driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/h2/button")).click();
 	  
+	  //click on search input box to clear the entered text
+	  WebElement searchInput = driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div/div[1]/div/input"));
+	  searchInput.click();
+	  Thread.sleep(2000);
+	  
+	  for(int i=0; i<= entered.length(); i++) {
+		  searchInput.sendKeys(Keys.BACK_SPACE);
+		  
+	  }
 	  
   }
 }
