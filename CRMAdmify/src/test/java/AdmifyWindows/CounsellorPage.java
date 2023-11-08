@@ -54,14 +54,14 @@ public class CounsellorPage extends LoginPage {
 		  
 //		  driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[1]")).click();
 
-//		  for(int i=1; i<= selectGender.size(); i++) {
-//			  WebElement ele = driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li["+i+"]"));
-//			  ele.getText();
-//			  if(ele.getText().equals("Female")) {
-//			
-//				  driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li["+i+"]")).click();
-//			  }
-//		  }
+		  for(int i=1; i<= selectGender.size(); i++) {
+			  WebElement ele = driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li["+i+"]"));
+			  ele.getText();
+			  if(ele.getText().equals("Female")) {
+			
+				  driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li["+i+"]")).click();
+			  }
+		  }
 		  
 //
 //			for (WebElement element : selectGender) {
@@ -73,17 +73,17 @@ public class CounsellorPage extends LoginPage {
 //				
 //			}
 			
-		  for(int i=1; i<=selectGender.size(); i++) {
-			  System.out.println("--------------------------------------------");
-			  String text = "/html/body/div[4]/div[3]/ul/li["+i+"]";
-			  System.out.println(text);
-			  Thread.sleep(1000);
-			  WebElement genderList = driver.findElement(By.xpath(text));
-			  System.out.println("click one");
-			  if(genderList.getText().equals("Male")) {
-				  driver.findElement(By.xpath(text)).click();  
-			  }
-		  }
+//		  for(int i=1; i<=selectGender.size(); i++) {
+//			  System.out.println("--------------------------------------------");
+//			  String text = "/html/body/div[4]/div[3]/ul/li["+i+"]";
+//			  System.out.println(text);
+//			  Thread.sleep(1000);
+//			  WebElement genderList = driver.findElement(By.xpath(text));
+//			  System.out.println("click one");
+//			  if(genderList.getText().equals("Male")) {
+//				  driver.findElement(By.xpath(text)).click();  
+//			  }
+//		  }
 		  
 		  System.out.println("successfully comes out");
 		  
