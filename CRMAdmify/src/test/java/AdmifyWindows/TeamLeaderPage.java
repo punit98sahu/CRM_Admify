@@ -62,11 +62,24 @@ public class TeamLeaderPage extends LoginPage{
 			  gender.click();
 			  //select value from dropdown
 			  List <WebElement> selectGender = driver.findElements(By.xpath("/html/body/div[4]/div[3]/ul"));
-			  selectGender.size();
-			  for(int i=1; i<= selectGender.size(); i++) {
-				  
+			  selectGender.forEach(element -> System.out.println("Text: " + element.getText()));
+			  
+			  System.out.println("--------------------------------------------");
+//			  for(WebElement Gender : selectGender) {
+//				  String ListGender =  Gender.getText();
+//				  if(ListGender.contains("Male")) {
+//					  Gender.click();
+//				  }
+//			  }  
+			  for(int i=1; i<=selectGender.size(); i++) {
+				  String List = "/html/body/div[4]/div[3]/ul["+i+"]";
+				  WebElement GenderList = driver.findElement(By.xpath(List));  
+				  if(GenderList.getText().contains("Male")) {
+					  GenderList.click();
+				  }
 			  }
-
+			  
+			  System.out.println("--------------------------------------------");
 			  //click on password input box
 			  WebElement password =driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[6]/div/div/input"));
 			  password.click();
@@ -82,11 +95,54 @@ public class TeamLeaderPage extends LoginPage{
 //		  driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/button")).click();
 		  //click on close icon button
 		  driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/h2/button")).click();
+		 
+		  //click on the filtered leads
+		  driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[2]/div[2]/div[2]/div/div/div[1]")).click();
 		  
-		  
-		  
-		  
-		  
-	  
+		  //Refresh window
+		  driver.navigate().refresh();
+
   }
+	  @Test(priority = 3)
+	  public void TeamLeaderTasks() throws InterruptedException {
+		  Thread.sleep(4000);
+		  //verify the Total tasks count for respected teamleader
+		  System.out.println(driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/nav/ol/li[3]/div")).getText());
+		  
+		  //get the total list count of the tasks
+		  System.out.println(driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[2]/div[2]/div[2]/div/div/div")).getSize());
+		  
+		  //search the task
+		  WebElement Search =driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div/div[1]/div/input"));
+		  Search.click();
+		  Search.sendKeys("Task");
+		  Thread.sleep(4000);
+		  
+		  //click on the filtered task
+		  List <WebElement> FilteredTask = driver.findElements(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[2]/div[2]/div[2]/div/div/div"));
+		  for(WebElement SearchTask : FilteredTask) {
+			  System.out.println(SearchTask.getText());
+			  
+			  for(int i=1; i<= FilteredTask.size(); i++) {
+				  String ele = "/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[2]/div[2]/div[2]/div/div/div["+i+"]/div[1]/div";
+				  				
+			  if(SearchTask.getText().equals("Task 2")) {
+				  driver.findElement(By.xpath(ele)).click();
+			  }
+		  }
+		  }
+//		  for(int i=1; i<=FilteredTask.size(); i++) {
+//		  String ele = "/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[2]/div[2]/div[2]/div/div/div["+i+"]/div[1]/div";
+//		  if(FilteredTask.contains("Task")) {
+//		  driver.findElement(By.xpath(ele)).click();
+//		  
+//		  
+//		  }
+//		  
+//	  }
+	  
+  
+	  
+	  
+	  }
 }
