@@ -6,7 +6,10 @@
       <class name="AdmifyWindows.CounsellorPage">
         <methods>
           <include name="beforeMethod"/>
+          <include name="CounselorDetail"/>
+          <include name="CounselorUpdate"/>
           <include name="Login"/>
+          <include name="CounselorTaskDetail"/>
           <include name="AddCounselors"/>
         </methods>
       </class> <!-- AdmifyWindows.CounsellorPage -->

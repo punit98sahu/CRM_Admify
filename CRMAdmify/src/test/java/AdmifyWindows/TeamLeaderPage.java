@@ -71,6 +71,7 @@ public class TeamLeaderPage extends LoginPage{
 //					  Gender.click();
 //				  }
 //			  }  
+			  
 			  for(int i=1; i<=selectGender.size(); i++) {
 				  String List = "/html/body/div[4]/div[3]/ul["+i+"]";
 				  WebElement GenderList = driver.findElement(By.xpath(List));  

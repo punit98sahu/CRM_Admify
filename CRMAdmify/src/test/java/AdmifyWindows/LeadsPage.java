@@ -510,6 +510,7 @@ public class LeadsPage extends LoginPage {
 		// click on pagination bar select page dropdown
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[2]/div[3]/div[2]/div/div[2]/div")).click();
 		// Run loop to select page size
+		
 		List<WebElement> Pagination = driver.findElements(By.xpath("/html/body/div[3]/div[3]/ul/li"));
 		System.out.println(Pagination.size());
 //		for(WebElement ele:Pagination) {
@@ -531,6 +532,7 @@ public class LeadsPage extends LoginPage {
 			driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[2]/div[3]/div[2]/div/div[2]/div")).click();
 
 		}
+		
 		//click anywhere on the screen
 		driver.findElement(By.xpath("/html/body/div[3]/div[1]")).click();
 		
