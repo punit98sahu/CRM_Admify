@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 public class Groups extends LoginPage {
-	@Test
+	@Test(priority = 1)
 	public void CreateGroups() throws InterruptedException {
 		Thread.sleep(2000);
 		// click on the group tab

@@ -7,9 +7,12 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 public class SchoolPage extends LoginPage {
-	 Actions act = new Actions(driver);
+	 
   @Test (priority = 1)
   public void AddSchool() throws InterruptedException {
+	  Thread.sleep(2000);
+	  //click on school tab
+	  driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/div/div/ul/li[13]/div/div[2]")).click();
 	  Thread.sleep(2000);
 	  //verify the school count
 	  System.out.println(driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/nav/ol/li/div")).getText());
@@ -49,7 +52,8 @@ public class SchoolPage extends LoginPage {
 	  search.click();
 	  String schoolTitle = "kv2";
 	  search.sendKeys(schoolTitle);
-	  
+	  Thread.sleep(2000);
+	  System.out.println("------clicking--------");
 	  //click on Edit school icon
 	  driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[2]/div[2]/div[2]/div[2]/div/div/div/div[6]/div")).click();
 	  
@@ -58,7 +62,7 @@ public class SchoolPage extends LoginPage {
  @Test(priority = 2)
  public void EditSchool() throws InterruptedException {
 	 Thread.sleep(2000);
-	 
+	 Actions act = new Actions(driver);
 	 //verify dialog box
 	 WebElement EditSchoolTitle = driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/h2"));
 	 String ActualTitle = EditSchoolTitle.getText();

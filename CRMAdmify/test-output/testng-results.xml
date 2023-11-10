@@ -1,29 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="31" passed="31" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-09T14:38:16 IST" name="Default suite" finished-at="2023-11-09T14:38:41 IST" duration-ms="24328">
+  <suite started-at="2023-11-10T16:46:09 IST" name="Suite" finished-at="2023-11-10T16:54:25 IST" duration-ms="496141">
     <groups>
     </groups>
-    <test started-at="2023-11-09T14:38:16 IST" name="Default test" finished-at="2023-11-09T14:38:41 IST" duration-ms="24328">
+    <test started-at="2023-11-10T16:46:09 IST" name="CompleteProject" finished-at="2023-11-10T16:54:25 IST" duration-ms="496141">
+      <class name="AdmifyWindows.InvalidLeads">
+        <test-method signature="InValidLeads()[pri:0, instance:AdmifyWindows.InvalidLeads@6fa51cd4]" started-at="2023-11-10T16:48:36 IST" name="InValidLeads" finished-at="2023-11-10T16:49:29 IST" duration-ms="53135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidLeads -->
+        <test-method signature="EditInvalidLeads()[pri:2, instance:AdmifyWindows.InvalidLeads@6fa51cd4]" started-at="2023-11-10T16:49:29 IST" name="EditInvalidLeads" finished-at="2023-11-10T16:49:39 IST" duration-ms="9255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditInvalidLeads -->
+      </class> <!-- AdmifyWindows.InvalidLeads -->
+      <class name="AdmifyWindows.TeamLeaderPage">
+        <test-method signature="TeamLeaderFields()[pri:0, instance:AdmifyWindows.TeamLeaderPage@1caa0244]" started-at="2023-11-10T16:52:33 IST" name="TeamLeaderFields" finished-at="2023-11-10T16:52:38 IST" duration-ms="4925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TeamLeaderFields -->
+        <test-method signature="AddTeamLeader()[pri:2, instance:AdmifyWindows.TeamLeaderPage@1caa0244]" started-at="2023-11-10T16:52:38 IST" name="AddTeamLeader" finished-at="2023-11-10T16:52:50 IST" duration-ms="11420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddTeamLeader -->
+        <test-method signature="TeamLeaderTasks()[pri:3, instance:AdmifyWindows.TeamLeaderPage@1caa0244]" started-at="2023-11-10T16:52:50 IST" name="TeamLeaderTasks" finished-at="2023-11-10T16:52:58 IST" duration-ms="8645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TeamLeaderTasks -->
+      </class> <!-- AdmifyWindows.TeamLeaderPage -->
+      <class name="AdmifyWindows.Demos">
+        <test-method signature="CreateDemo()[pri:1, instance:AdmifyWindows.Demos@14028087]" started-at="2023-11-10T16:51:37 IST" name="CreateDemo" finished-at="2023-11-10T16:52:05 IST" duration-ms="27414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateDemo -->
+        <test-method signature="TableColumns()[pri:2, instance:AdmifyWindows.Demos@14028087]" started-at="2023-11-10T16:52:05 IST" name="TableColumns" finished-at="2023-11-10T16:52:13 IST" duration-ms="8274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TableColumns -->
+      </class> <!-- AdmifyWindows.Demos -->
+      <class name="AdmifyWindows.Dashboard">
+        <test-method signature="DashBoard()[pri:1, instance:AdmifyWindows.Dashboard@57a78e3]" started-at="2023-11-10T16:46:09 IST" name="DashBoard" finished-at="2023-11-10T16:46:20 IST" duration-ms="10447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DashBoard -->
+        <test-method signature="DashboardLeadsCount()[pri:2, instance:AdmifyWindows.Dashboard@57a78e3]" started-at="2023-11-10T16:46:20 IST" name="DashboardLeadsCount" finished-at="2023-11-10T16:46:24 IST" duration-ms="4467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DashboardLeadsCount -->
+        <test-method signature="counsellor()[pri:3, instance:AdmifyWindows.Dashboard@57a78e3]" started-at="2023-11-10T16:46:24 IST" name="counsellor" finished-at="2023-11-10T16:46:29 IST" duration-ms="4417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- counsellor -->
+        <test-method signature="Task()[pri:4, instance:AdmifyWindows.Dashboard@57a78e3]" started-at="2023-11-10T16:46:29 IST" name="Task" finished-at="2023-11-10T16:46:37 IST" duration-ms="8437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Task -->
+        <test-method signature="Leads()[pri:5, instance:AdmifyWindows.Dashboard@57a78e3]" started-at="2023-11-10T16:46:37 IST" name="Leads" finished-at="2023-11-10T16:46:43 IST" duration-ms="5416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Leads -->
+        <test-method signature="FunctionalGrid()[pri:6, instance:AdmifyWindows.Dashboard@57a78e3]" started-at="2023-11-10T16:46:43 IST" name="FunctionalGrid" finished-at="2023-11-10T16:46:57 IST" duration-ms="14686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FunctionalGrid -->
+      </class> <!-- AdmifyWindows.Dashboard -->
+      <class name="AdmifyWindows.SchoolPage">
+        <test-method signature="AddSchool()[pri:1, instance:AdmifyWindows.SchoolPage@1750fbeb]" started-at="2023-11-10T16:53:52 IST" name="AddSchool" finished-at="2023-11-10T16:54:00 IST" duration-ms="7821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddSchool -->
+        <test-method signature="EditSchool()[pri:2, instance:AdmifyWindows.SchoolPage@1750fbeb]" started-at="2023-11-10T16:54:00 IST" name="EditSchool" finished-at="2023-11-10T16:54:03 IST" duration-ms="3386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditSchool -->
+      </class> <!-- AdmifyWindows.SchoolPage -->
+      <class name="AdmifyWindows.StagesPage">
+        <test-method signature="AddStages()[pri:0, instance:AdmifyWindows.StagesPage@cecf639]" started-at="2023-11-10T16:52:13 IST" name="AddStages" finished-at="2023-11-10T16:52:33 IST" duration-ms="20311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddStages -->
+      </class> <!-- AdmifyWindows.StagesPage -->
+      <class name="AdmifyWindows.Groups">
+        <test-method signature="CreateGroups()[pri:1, instance:AdmifyWindows.Groups@5386659f]" started-at="2023-11-10T16:51:00 IST" name="CreateGroups" finished-at="2023-11-10T16:51:10 IST" duration-ms="10155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateGroups -->
+        <test-method signature="GroupDetailPage()[pri:2, instance:AdmifyWindows.Groups@5386659f]" started-at="2023-11-10T16:51:10 IST" name="GroupDetailPage" finished-at="2023-11-10T16:51:37 IST" duration-ms="27146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GroupDetailPage -->
+      </class> <!-- AdmifyWindows.Groups -->
       <class name="AdmifyWindows.StaffPage">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:AdmifyWindows.StaffPage@3a7442c7]" started-at="2023-11-09T14:38:13 IST" name="beforeMethod" finished-at="2023-11-09T14:38:16 IST" duration-ms="2988" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:AdmifyWindows.StaffPage@3a7442c7]" started-at="2023-11-09T14:38:16 IST" name="Login" finished-at="2023-11-09T14:38:17 IST" duration-ms="467" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="AddStaff()[pri:0, instance:AdmifyWindows.StaffPage@3a7442c7]" started-at="2023-11-09T14:38:17 IST" name="AddStaff" finished-at="2023-11-09T14:38:31 IST" duration-ms="13871" status="PASS">
+        <test-method signature="AddStaff()[pri:1, instance:AdmifyWindows.StaffPage@7ce69770]" started-at="2023-11-10T16:53:29 IST" name="AddStaff" finished-at="2023-11-10T16:53:42 IST" duration-ms="13494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddStaff -->
-        <test-method signature="StaffDetail()[pri:2, instance:AdmifyWindows.StaffPage@3a7442c7]" started-at="2023-11-09T14:38:31 IST" name="StaffDetail" finished-at="2023-11-09T14:38:41 IST" duration-ms="9925" status="PASS">
+        <test-method signature="StaffDetail()[pri:2, instance:AdmifyWindows.StaffPage@7ce69770]" started-at="2023-11-10T16:53:42 IST" name="StaffDetail" finished-at="2023-11-10T16:53:52 IST" duration-ms="9759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StaffDetail -->
       </class> <!-- AdmifyWindows.StaffPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="AdmifyWindows.LeadsPage">
+        <test-method signature="AddLeads()[pri:1, instance:AdmifyWindows.LeadsPage@402c4085]" started-at="2023-11-10T16:46:57 IST" name="AddLeads" finished-at="2023-11-10T16:47:02 IST" duration-ms="4632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddLeads -->
+        <test-method signature="AddLeadForm()[pri:2, instance:AdmifyWindows.LeadsPage@402c4085]" started-at="2023-11-10T16:47:02 IST" name="AddLeadForm" finished-at="2023-11-10T16:47:33 IST" duration-ms="30897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddLeadForm -->
+        <test-method signature="Filter()[pri:3, instance:AdmifyWindows.LeadsPage@402c4085]" started-at="2023-11-10T16:47:33 IST" name="Filter" finished-at="2023-11-10T16:48:04 IST" duration-ms="31164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Filter -->
+        <test-method signature="AddGroup()[pri:4, instance:AdmifyWindows.LeadsPage@402c4085]" started-at="2023-11-10T16:48:04 IST" name="AddGroup" finished-at="2023-11-10T16:48:36 IST" duration-ms="32239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddGroup -->
+      </class> <!-- AdmifyWindows.LeadsPage -->
+      <class name="AdmifyWindows.SettingsPage">
+        <test-method signature="settingProfile()[pri:0, instance:AdmifyWindows.SettingsPage@5b247367]" started-at="2023-11-10T16:54:03 IST" name="settingProfile" finished-at="2023-11-10T16:54:25 IST" duration-ms="21798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingProfile -->
+      </class> <!-- AdmifyWindows.SettingsPage -->
+      <class name="AdmifyWindows.LoginPage">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:AdmifyWindows.LoginPage@909217e]" started-at="2023-11-10T16:46:06 IST" name="beforeMethod" finished-at="2023-11-10T16:46:09 IST" duration-ms="2732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:AdmifyWindows.LoginPage@909217e]" started-at="2023-11-10T16:46:09 IST" name="Login" finished-at="2023-11-10T16:46:09 IST" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+      </class> <!-- AdmifyWindows.LoginPage -->
+      <class name="AdmifyWindows.CounsellorPage">
+        <test-method signature="AddCounselors()[pri:1, instance:AdmifyWindows.CounsellorPage@7ce026d3]" started-at="2023-11-10T16:52:58 IST" name="AddCounselors" finished-at="2023-11-10T16:53:11 IST" duration-ms="12343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCounselors -->
+        <test-method signature="CounselorUpdate()[pri:2, instance:AdmifyWindows.CounsellorPage@7ce026d3]" started-at="2023-11-10T16:53:11 IST" name="CounselorUpdate" finished-at="2023-11-10T16:53:21 IST" duration-ms="10180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CounselorUpdate -->
+        <test-method signature="CounselorDetail()[pri:3, instance:AdmifyWindows.CounsellorPage@7ce026d3]" started-at="2023-11-10T16:53:21 IST" name="CounselorDetail" finished-at="2023-11-10T16:53:27 IST" duration-ms="6427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CounselorDetail -->
+        <test-method signature="CounselorTaskDetail()[pri:4, instance:AdmifyWindows.CounsellorPage@7ce026d3]" started-at="2023-11-10T16:53:27 IST" name="CounselorTaskDetail" finished-at="2023-11-10T16:53:29 IST" duration-ms="1534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CounselorTaskDetail -->
+      </class> <!-- AdmifyWindows.CounsellorPage -->
+      <class name="AdmifyWindows.Documents">
+        <test-method signature="CreateDocument()[pri:0, instance:AdmifyWindows.Documents@710c2b53]" started-at="2023-11-10T16:50:32 IST" name="CreateDocument" finished-at="2023-11-10T16:51:00 IST" duration-ms="28317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateDocument -->
+      </class> <!-- AdmifyWindows.Documents -->
+      <class name="AdmifyWindows.Referrers">
+        <test-method signature="AddReferrer()[pri:0, instance:AdmifyWindows.Referrers@2767e23c]" started-at="2023-11-10T16:49:39 IST" name="AddReferrer" finished-at="2023-11-10T16:50:32 IST" duration-ms="52996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddReferrer -->
+      </class> <!-- AdmifyWindows.Referrers -->
+    </test> <!-- CompleteProject -->
+  </suite> <!-- Suite -->
 </testng-results>

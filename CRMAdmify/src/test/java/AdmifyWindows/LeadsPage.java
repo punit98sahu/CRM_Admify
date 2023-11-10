@@ -411,7 +411,8 @@ public class LeadsPage extends LoginPage {
 
 	@Test(priority = 4)
 	public void AddGroup() throws InterruptedException {
-
+		System.out.println("lead ading to group");
+		
 		// click on Add to group button After adding filter
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div[1]/div/div[2]/div[1]/button")).click();
 		// click on Add to existing group dropdown

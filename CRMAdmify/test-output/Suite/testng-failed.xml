@@ -3,13 +3,20 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="CompleteProject(failed)">
     <classes>
-      <class name="AdmifyWindows.InvalidLeads">
+      <class name="AdmifyWindows.SchoolPage">
         <methods>
+          <include name="EditSchool"/>
           <include name="beforeMethod"/>
-          <include name="EditInvalidLeads"/>
           <include name="Login"/>
         </methods>
-      </class> <!-- AdmifyWindows.InvalidLeads -->
+      </class> <!-- AdmifyWindows.SchoolPage -->
+      <class name="AdmifyWindows.StagesPage">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="AddStages"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- AdmifyWindows.StagesPage -->
     </classes>
   </test> <!-- CompleteProject(failed) -->
 </suite> <!-- Failed suite [Suite] -->

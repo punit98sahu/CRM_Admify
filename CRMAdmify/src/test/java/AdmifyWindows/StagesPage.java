@@ -101,7 +101,7 @@ public class StagesPage extends LoginPage {
 	  //Search the stages by stage Name only 
 	  WebElement stageSearch = driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div[1]/div/div[1]/div/input"));
 	  stageSearch.click();
-	  String entered ="Wrong";
+	  String entered ="Not";
 	  stageSearch.sendKeys(entered);
 	  
 	  //click on the filtered category to get the stage

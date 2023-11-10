@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 public class StaffPage extends LoginPage {
-  @Test
+  @Test(priority = 1)
   public void AddStaff() throws InterruptedException {
 	  
 	  Thread.sleep(4000);

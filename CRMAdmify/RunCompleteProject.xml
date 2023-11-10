@@ -12,7 +12,14 @@
         <class name="AdmifyWindows.Documents"/>
         <class name="AdmifyWindows.Groups"/>
       	<class name="AdmifyWindows.Demos"/>
-      
+<!--      	<class name="AdmifyWindows.TasksPage"/>-->
+        <class name="AdmifyWindows.StagesPage"/>
+      	<class name="AdmifyWindows.TeamLeaderPage"/>
+      	<class name="AdmifyWindows.CounsellorPage"/>
+        <class name="AdmifyWindows.StaffPage"/>
+      	<class name="AdmifyWindows.SchoolPage"/>
+      	<class name="AdmifyWindows.SettingsPage"/>
+      	
     </classes>
   </test> <!-- CompleteProject -->
 </suite> <!-- Suite -->
